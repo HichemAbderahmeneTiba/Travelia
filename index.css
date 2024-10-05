@@ -20,6 +20,7 @@ a {
 
 header {
   background-color: rgb(243, 228, 204);
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,9 +38,10 @@ header {
 
 .informations .informations-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 70px;
+  width: 500px;
+  text-align: center;
 }
 
 .subscribe {
@@ -47,6 +49,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  text-align: center;
 }
 
 .sign-up {
@@ -54,8 +57,19 @@ header {
   background-color: blue;
   color: rgb(243, 228, 204);
   border-radius: 50px;
+  width: fit-content;
 }
 
 .underlined {
   border-bottom: 2px solid blue;
+}
+
+.other-devices {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
