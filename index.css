@@ -36,11 +36,15 @@ header {
   }
 }
 
+.informations {
+  width: 40%;
+  max-width: 500px;
+}
+
 .informations .informations-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 500px;
   text-align: center;
 }
 
