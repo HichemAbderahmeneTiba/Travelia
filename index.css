@@ -77,3 +77,31 @@ header {
   display: none;
   cursor: pointer;
 }
+
+@media (max-width: 786px) {
+  .informations {
+    display: none;
+    cursor: pointer;
+  }
+
+  .subscribe {
+    display: none;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    img {
+      margin-left: 40px;
+    }
+  }
+}
