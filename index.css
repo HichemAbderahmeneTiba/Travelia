@@ -134,6 +134,7 @@ header {
     justify-content: flex-start;
     font-size: 18px;
     transform: translateX(100%);
+    transition: all 0.8s ease-in-out;
   }
 
   .informations-other {
@@ -170,6 +171,18 @@ header {
 
   .active {
     transform: translateX(-0%);
-    transition: right 0.8s ease-in;
+  }
+}
+
+@media (max-width: 568px) {
+  .others {
+    width: 100%;
+  }
+
+  .informations-list-other {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 100%;
   }
 }
