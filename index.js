@@ -1,3 +1,5 @@
+"use strict";
+
 let list_item = document.querySelectorAll(".list-item");
 console.log(list_item);
 list_item.forEach(item => {
