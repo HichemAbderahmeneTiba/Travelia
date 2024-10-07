@@ -21,6 +21,8 @@ a {
   color: black;
 }
 
+/* navbar */
+
 header {
   position: relative;
   background-color: rgb(243, 228, 204);
@@ -72,10 +74,6 @@ header {
   border-bottom: 2px solid blue;
 }
 
-.leftlined {
-  border-left: 2px solid blue;
-}
-
 .other-devices {
   display: none;
   cursor: pointer;
@@ -86,6 +84,33 @@ header {
   cursor: pointer;
 }
 
+.sticky {
+  position: sticky;
+}
+
+/* Hero */
+
+.hero {
+  background-color: rgb(243, 228, 204);
+  padding-top: 200px;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.word-part {
+  width: 50%;
+}
+
+.photo-part {
+  width: 50%;
+}
+
+.main-hero-photo {
+  width: 100%;
+}
+
+/* Media Queries */
 @media (max-width: 786px) {
   .informations {
     display: none;
