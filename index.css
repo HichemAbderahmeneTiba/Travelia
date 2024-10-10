@@ -37,7 +37,6 @@ header {
   padding-top: 15px;
   font-size: 13px;
   font-weight: 600;
-  transition: background-color 0.9s ease-in-out;
 }
 
 .sticky {
@@ -49,11 +48,6 @@ header {
   z-index: 1000;
   padding-bottom: 15px;
   transform: translateY(0);
-  transition: transform 1s ease-in-out;
-}
-
-.up {
-  transform: translateY(-100%);
   transition: transform 1s ease-in-out;
 }
 
