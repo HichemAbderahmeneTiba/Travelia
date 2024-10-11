@@ -37,6 +37,7 @@ header {
   padding-top: 15px;
   font-size: 13px;
   font-weight: 600;
+  transition: transform 1s ease-in-out;
 }
 
 .sticky {
@@ -47,7 +48,7 @@ header {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding-bottom: 15px;
-  transform: translateY(0);
+  transform: translateY(0%);
   transition: transform 1s ease-in-out;
 }
 
@@ -219,12 +220,11 @@ header {
   .others {
     background-color: rgb(246, 244, 242);
     margin-top: 80px;
-    padding-top: 30px;
-    position: sticky;
+    padding-top: 40px;
+    position: fixed;
     top: 0;
     height: calc(100vh - 80px);
     width: 50%;
-    position: absolute;
     font-weight: 500;
     right: 0;
     display: flex;
@@ -234,6 +234,11 @@ header {
     font-size: 18px;
     transform: translateX(100%);
     transition: all 0.8s ease-in-out;
+  }
+
+  .sticky-other {
+    margin-top: 55px;
+    height: calc(100vh - 55px);
   }
 
   .informations-other {

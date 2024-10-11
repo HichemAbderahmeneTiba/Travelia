@@ -22,7 +22,9 @@ menu_icon.addEventListener("click", function () {
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 120) {
     navBar.classList.add("sticky");
+    others.classList.add("sticky-other");
   } else {
     navBar.classList.remove("sticky");
+    others.classList.remove("sticky-other");
   }
 });
