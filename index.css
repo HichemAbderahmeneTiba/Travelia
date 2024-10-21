@@ -258,6 +258,47 @@ header {
   background-color: rgb(190, 188, 186);
 }
 
+/* For the destinations */
+.destinations {
+  background-color: rgb(243, 228, 204);
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.top {
+  color: blueviolet;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.destination-h2 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.all-destinations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  img {
+    border-radius: 30px;
+    width: 100%;
+  }
+}
+
+.destination {
+  margin: 20px 10px;
+  width: 30%;
+}
+
 /* Media Queries */
 @media (max-width: 786px) {
   .informations {
