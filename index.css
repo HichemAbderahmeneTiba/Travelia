@@ -401,7 +401,7 @@ header {
   .block {
     width: calc(100% / 2 - 50px);
     position: static;
-    padding: 50px;
+    padding: 30px;
     img {
       width: 30%;
     }
@@ -481,7 +481,7 @@ header {
   .block {
     width: 80%;
     position: static;
-    padding: 50px;
+    padding: 25px;
     img {
       width: 30%;
     }
