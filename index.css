@@ -14,6 +14,7 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+  background-color: rgb(243, 228, 204);
 }
 
 ul {
@@ -282,21 +283,56 @@ header {
 }
 
 .all-destinations {
+  position: relative;
+  margin: 0 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  gap: 60px;
+
   flex-wrap: wrap;
 
   img {
     border-radius: 30px;
     width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
   }
 }
 
+.price {
+  position: absolute;
+  color: blue;
+  background-color: white;
+  border-radius: 35px;
+  width: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  top: 5%;
+  left: 20%;
+  z-index: 1;
+}
+
 .destination {
-  margin: 20px 10px;
-  width: 30%;
+  width: 25%;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+
+  .image-container {
+    border-radius: 30px;
+  }
+}
+
+.review {
+  display: flex;
+  width: 100%;
 }
 
 /* Media Queries */
