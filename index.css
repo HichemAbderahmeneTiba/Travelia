@@ -286,16 +286,16 @@ header {
   position: relative;
   margin: 0 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 60px;
 
   flex-wrap: wrap;
 
   img {
-    border-radius: 30px;
+    /* border-radius: 30px;
     width: 100%;
-    height: 100%;
+    height: 100%; */
     transition: all 0.8s ease;
   }
 
@@ -304,23 +304,23 @@ header {
   }
 }
 
-.price {
-  position: absolute;
-  color: blue;
-  background-color: white;
-  border-radius: 35px;
-  width: 100px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  padding: 10px 15px;
-  top: 5%;
-  left: 20%;
-  z-index: 1;
+.image-container {
+  border-radius: 50px;
+  overflow: hidden; /* ensures the image doesn't overflow the div */
+  position: relative; /* keeps the image contained */
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    display: block;
+  }
 }
 
 .destination {
   width: 25%;
+
+  height: 500px;
+  min-height: 300px;
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
   height: 100%;
@@ -328,11 +328,58 @@ header {
   .image-container {
     border-radius: 30px;
   }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .place {
+    color: rgb(98, 95, 95);
+    font-weight: 420;
+    margin-bottom: 10px;
+  }
+}
+
+.price {
+  position: absolute;
+  width: 100px;
+  color: blueviolet;
+  background-color: white;
+  padding: 10px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 20px;
+  bottom: 80%;
+  left: 65%;
+  z-index: 1;
 }
 
 .review {
   display: flex;
   width: 100%;
+}
+
+.star {
+  width: ;
+  background-color: rgb(218, 246, 159);
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.fa-star {
+  color: rgb(203, 203, 69);
+  margin-right: 5px;
+}
+
+.star-description {
+  padding: 3px 0;
+  color: rgb(98, 95, 95);
+  font-weight: 420;
 }
 
 /* Media Queries */
