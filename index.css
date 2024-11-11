@@ -794,4 +794,25 @@ header {
     left: 55%;
     bottom: 78%;
   }
+
+  /* experience  */
+  .the-experience {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-exp {
+    text-align: center;
+  }
+  .squares {
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .square {
+    width: 100%;
+    justify-content: start;
+    margin-left: 20px;
+  }
 }
