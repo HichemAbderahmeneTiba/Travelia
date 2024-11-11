@@ -629,6 +629,46 @@ header {
     padding: 7px 12px;
     font-size: 16px;
   }
+
+  /* Experience  */
+  .experience {
+    flex-direction: column;
+  }
+
+  .img-container {
+    width: 100%;
+    order: 2;
+  }
+
+  .the-experience {
+    width: 100%;
+    order: 1;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .experience-description {
+    font-size: 13.5px;
+  }
+
+  .squares {
+    .big {
+      font-size: 35px;
+      margin-right: 10px;
+    }
+    justify-content: space-between;
+  }
+
+  .square {
+    flex-direction: row;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .extra {
+    margin: 0;
+  }
 }
 
 @media (max-width: 568px) {
