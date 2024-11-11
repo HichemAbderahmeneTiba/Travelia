@@ -392,6 +392,30 @@ header {
   font-weight: 420;
 }
 
+.view {
+  color: white;
+  background-color: blueviolet;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  font-weight: 600;
+  transition: background-color 0.8s ease;
+}
+
+.view:hover {
+  background-color: rgb(59, 0, 114);
+}
+
+.view:active,
+.view:focus {
+  background-color: blueviolet;
+  outline: none;
+}
+
+.view:hover:focus,
+.view:hover:active {
+  background-color: rgb(59, 0, 114); /* Keep hover color */
+}
 /* Experience part*/
 .experience {
   margin: 0 50px;
