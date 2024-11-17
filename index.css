@@ -98,10 +98,22 @@ header {
   color: rgb(243, 228, 204);
   border-radius: 50px;
   width: fit-content;
+  transition: background-color 0.8s ease;
 }
 
 .sign-up:hover {
-  background-color: red;
+  background-color: rgb(59, 0, 114);
+}
+
+.sign-up:active,
+.sign-up:focus {
+  background-color: blueviolet;
+  outline: none;
+}
+
+.sign-up:hover:focus,
+.sign-up:hover:active {
+  background-color: rgb(59, 0, 114);
 }
 
 .underlined {
@@ -191,6 +203,21 @@ header {
     color: black;
     padding: 15px;
     border-radius: 90px;
+    transition: background-color 0.8s ease;
+  }
+  .fa-play:hover {
+    background-color: rgb(226, 225, 147);
+  }
+
+  .fa-play:active,
+  .fa-play:focus {
+    background-color: rgb(226, 225, 147);
+    outline: none;
+  }
+
+  .fa-play:hover:focus,
+  .fa-play:hover:active {
+    background-color: rgb(226, 225, 147);
   }
 }
 
@@ -414,7 +441,7 @@ header {
 
 .view:hover:focus,
 .view:hover:active {
-  background-color: rgb(59, 0, 114); /* Keep hover color */
+  background-color: rgb(59, 0, 114);
 }
 /* Experience part*/
 .experience {
@@ -479,6 +506,49 @@ header {
   font-weight: 700;
 }
 
+/* Travelers */
+
+.travelers {
+  margin: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+
+  .travelers-photo {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.pho3 {
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  height: 100%;
+}
+
+.pho1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+.pho4 {
+  height: 100%;
+}
+.pho5 {
+  grid-column: 1 / 3;
+  height: 100%;
+}
+.pho6 {
+  grid-column: 4 / 5;
+  height: 100%;
+}
 /* Media Queries */
 @media (max-width: 786px) {
   .informations {
@@ -707,6 +777,43 @@ header {
   .extra {
     margin: 0;
   }
+
+  /* Travelers */
+  .travelers {
+    margin: 100px 50px;
+  }
+
+  .photos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .travelers-photo {
+    height: 100%;
+  }
+  .pho1 {
+    grid-column: 1 / 2;
+  }
+  .pho2 {
+    grid-column: 2 / 3;
+  }
+
+  .pho3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+  }
+
+  .pho4 {
+    grid-column: 1 / 3;
+  }
+
+  .pho5 {
+    grid-column: 1 / 3;
+  }
+
+  .pho6 {
+    grid-column: 1 / 3;
+  }
 }
 
 @media (max-width: 568px) {
@@ -838,5 +945,45 @@ header {
     width: 100%;
     justify-content: start;
     margin-left: 20px;
+  }
+
+  /* Travelers */
+  .travelers-h2 {
+    text-align: center;
+  }
+
+  .photos {
+    grid-column: 100%;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .travelers-photo {
+    height: 100%;
+  }
+
+  .pho1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .pho2 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+  }
+
+  .pho3 {
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+  }
+
+  .pho4 {
+    grid-column: 1 / 3;
+  }
+
+  .pho5 {
+    grid-column: 1 / 3;
+  }
+
+  .pho6 {
+    grid-column: 1 / 3;
   }
 }
